@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <!-- Cambia esto por tu logo -->
+
+
+    <!-- Campo de texto para el usuario -->
+
+    <!-- Campo de texto para la contraseña -->
+
+    <!-- Botón para ingresar -->
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/htg"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/design_default_color_background"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsuario" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextContraseña" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
